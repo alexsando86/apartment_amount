@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Spinner, Table, TableCaption, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import SpinnerBox from './SpinnerBox';
 
 type apartmentTypes = {
 	아파트:string;
@@ -19,17 +20,20 @@ const ApartmentAmount = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	const aptReducer =  useSelector((state: any) => state.aptReducer)
 
+	const day = new Date();
+	const year = day.getFullYear();
+	const month = day.getMonth() + 1;
+
 	useEffect(() => {
 		aptReducer.length > 0 && setIsLoading(false);
 	}, [aptReducer.length])
 
 	return (
 		<Box m={4}>
-			<Heading fontSize="lg" m={4}>아파트 실거래가</Heading>
+			<Heading fontSize="lg" m={4}>{`${year}년${month}월`} 김포 아파트 실거래가</Heading>
 			{isLoading && (
-				<Flex justifyContent="center" alignItems="center" style={{position:"fixed", left:0,top:0,bottom:0,right:0,background:"rgba(0,0,0,.6)"}}>
-					<Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" size="xl" color="red.500" zIndex="10" />
-				</Flex>
+				<SpinnerBox />
+				
 			)}
 			{!isLoading &&(
 				<Table variant="striped" size="lg">

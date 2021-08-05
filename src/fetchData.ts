@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 const today: Date = new Date();
@@ -17,6 +16,7 @@ const url = 'http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/
 let queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'HoRvXlHzt4YAth4rfQmkQUXibIMl%2BmmW24iZZ8mYKPg0B9ZAAtYr6kVBtCf2Yf4n2XQWjRnDXZzDvE2XoLwVkg%3D%3D'; /*Service Key*/
 queryParams += '&' + encodeURIComponent('LAWD_CD') + '=' + encodeURIComponent('41570'); /* 김포코드 41570 */
 queryParams += '&' + encodeURIComponent('DEAL_YMD') + '=' + encodeURIComponent(thatMonth); /**/
+
 
 const fetchApiData = () => axios({
 	method:'GET',
