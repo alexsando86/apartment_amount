@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/apartment_amount/static/js/main.6deffaa2.chunk.js",
+    "main.js.map": "/apartment_amount/static/js/main.6deffaa2.chunk.js.map",
+    "runtime-main.js": "/apartment_amount/static/js/runtime-main.79b4238d.js",
+    "runtime-main.js.map": "/apartment_amount/static/js/runtime-main.79b4238d.js.map",
+    "static/js/2.e6375623.chunk.js": "/apartment_amount/static/js/2.e6375623.chunk.js",
+    "static/js/2.e6375623.chunk.js.map": "/apartment_amount/static/js/2.e6375623.chunk.js.map",
+    "index.html": "/apartment_amount/index.html",
+    "static/js/2.e6375623.chunk.js.LICENSE.txt": "/apartment_amount/static/js/2.e6375623.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79b4238d.js",
+    "static/js/2.e6375623.chunk.js",
+    "static/js/main.6deffaa2.chunk.js"
+  ]
+}
