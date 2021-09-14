@@ -23,6 +23,16 @@ const ApartmentAmount = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	const aptReducer = useSelector((state: any) => state.aptReducer);
 
+	const aptSorting = aptReducer
+		.map((item: apartmentTypes) => item)
+		.sort((a: apartmentTypes, b: apartmentTypes) => {
+			if (!active) {
+				return a.전용면적 < b.전용면적 ? -1 : a.전용면적 === b.전용면적 ? 0 : 1;
+			} else {
+				return a.전용면적 > b.전용면적 ? -1 : a.전용면적 === b.전용면적 ? 0 : 1;
+			}
+		});
+
 	const handleApt = () => {
 		const aptSorting = aptReducer
 			.map((item: apartmentTypes) => item)
@@ -85,6 +95,7 @@ const ApartmentAmount = () => {
 
 	useEffect(() => {
 		aptReducer.length > 0 && setIsLoading(false);
+		setSortState(aptSorting);
 	}, [aptReducer.length]);
 
 	return (
