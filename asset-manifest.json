@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/apartment_amount/static/js/main.ff0c9b73.chunk.js",
-    "main.js.map": "/apartment_amount/static/js/main.ff0c9b73.chunk.js.map",
+    "main.js": "/apartment_amount/static/js/main.ffb5d58b.chunk.js",
+    "main.js.map": "/apartment_amount/static/js/main.ffb5d58b.chunk.js.map",
     "runtime-main.js": "/apartment_amount/static/js/runtime-main.79b4238d.js",
     "runtime-main.js.map": "/apartment_amount/static/js/runtime-main.79b4238d.js.map",
     "static/js/2.e6375623.chunk.js": "/apartment_amount/static/js/2.e6375623.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.79b4238d.js",
     "static/js/2.e6375623.chunk.js",
-    "static/js/main.ff0c9b73.chunk.js"
+    "static/js/main.ffb5d58b.chunk.js"
   ]
 }
