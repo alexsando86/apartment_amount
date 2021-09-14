@@ -1,19 +1,21 @@
+import { getUrl } from "../fetchData";
+
 export const loadApt = () => {
 	return {
-		type: "LOAD_APT"
+		type: "LOAD_APT",
 	};
-}
+};
 
 export const loadAptSuccess = (data: any) => {
 	return {
 		type: "LOAD_APT_SUCCESS",
-		payload:data,
+		payload: data,
 	};
 };
 
 export const loadAptFail = (error: any) => {
 	return {
 		type: "LOAD_APT_FAIL",
-		error
-	}
-}
+		error,
+	};
+};
